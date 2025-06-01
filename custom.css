@@ -1,0 +1,46 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.word {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.word-1 { animation-delay: 0.3s; }
+.word-2 { animation-delay: 1s; }
+.word-3 { animation-delay: 1.7s; }
+.description { animation: fadeInUp 1s ease-out forwards; animation-delay: 2.5s; opacity: 0; }
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animated-bg {
+  background: linear-gradient(-45deg, #f0f4f8, #dbeafe, #e0f2fe, #f0f4f8);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
